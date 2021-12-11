@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DatingApp.Interfaces
 {
-    interface ILikesRepository
+    public interface ILikesRepository
     {
         Task<UserLike> GetUserLike(int sourceId, int likedUserId);
         Task<AppUser> GetUserWithLikes(int userId);
